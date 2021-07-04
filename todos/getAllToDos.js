@@ -3,7 +3,7 @@ const verifyToken = require('../helpers/verifyToken');
 const { writeFile, readFile } = require('fs/promises');
 const path = require('path');
 
-async function getAllToDos(){
+async function getAllToDos() {
 	try {
 		const userEmail = verifyToken();
 		if (!userEmail) {
@@ -16,7 +16,10 @@ async function getAllToDos(){
 		if (!users[userIndex].todo) {
 			console.log('No items to display');
 		}
-		console.log('These are all the ToDo items ', users[userIndex].todo);
+
+		const todos = users[userIndex].todo;
+		console.log('These are all the ToDo items: ');
+		todos.forEach((item, index) => console.log(`${index + 1}.${item.todoItem}`));
 	} catch (err) {
 		console.log('error', err);
 	}

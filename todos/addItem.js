@@ -29,7 +29,6 @@ async function addItem() {
             users[userIndex].todo = [];
         }
 
-        uuidv4();
         users[userIndex].todo.push(todoObj);
 
         await writeFile(path.resolve('data/users.json'), JSON.stringify(users));

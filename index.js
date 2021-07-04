@@ -2,6 +2,7 @@ const readlineSync = require('readline-sync');
 //Importing User Functions
 const user = require('./users');
 const todos = require('./todos');
+
 async function main() {
     console.clear();
     console.log("-------------------------");
@@ -47,6 +48,7 @@ async function main() {
                 break;
             case 6:
                 console.log("Deleting a ToDo item");
+                await todos.deleteItem();
                 break;
             case 7:
                 console.log("Getting all ToDo items");
@@ -54,6 +56,7 @@ async function main() {
                 break;
             case 8:
                 console.log("Deleting a user Account");
+                await user.userDelete();
                 break;
         }
         var shouldContinue = readlineSync.question("Do you want to continue ? (y/n) : ");

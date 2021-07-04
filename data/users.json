@@ -1,69 +1,70 @@
 [
-	{
-		"firstName": "rhea",
-		"email": "rhea@gmail.com",
-		"password": "$2b$12$zEmhOCFD6jg..Eib8GD29OVPN7NbWGl4G6Dy4YIRzEHeOANDpyuMu",
-		"todo": [
-			{ "id": "a4dfd557-4c2d-4e83-981d-83f1009f429d", "todoItem": "task 1" },
-			{ "id": "d1bd4d16-c0a0-4a82-8148-8d6dfc8ae69e", "todoItem": "finish hw" },
-			{
-				"id": "e2e72ef3-1b80-4dfb-a04b-d92066c257df",
-				"todoItem": "watch class"
-			}
-		]
-	},
-	{
-		"firstName": "harsh",
-		"email": "harsh@gmail.com",
-		"password": "$2b$12$8zsanV1sSzxi4O/ect0AfOW1kwSjR3X3aEwtardSEsmc2nl7oxuoK",
-		"todo": [
-			{ "id": "a3c53fde-a2e5-485a-9631-415b1d759e5e", "todoItem": "task 1" },
-			{
-				"id": "f3ec9241-ad16-4661-8ac0-62abe62a05ed",
-				"todoItem": "work to do"
-			},
-			{ "id": "ae6962cf-1908-4062-a451-87ed39929ace", "todoItem": "break time" }
-		]
-	},
-	{
-		"firstName": "ansh",
-		"email": "ansh@gmail.com",
-		"password": "$2b$12$d7GDcezy/9C5l2aY30x0Y.6ZF/OJ15BVZWy1RxFhGupn1kA8ldFj.",
-		"todo": [
-			{ "id": "2fdd8779-6e16-4204-82c9-eb202ef9f592", "todoItem": "new task" },
-			{
-				"id": "395b7c62-6b0c-4dae-8f17-c2c2bce7af95",
-				"todoItem": "take over the world"
-			},
-			{ "id": "ed79ee1d-6e57-4762-bb0a-ec000b3ad9d6", "todoItem": "Checking" }
-		]
-	},
-	{
-		"firstName": "prash",
-		"email": "prash@gmail.com",
-		"password": "$2b$12$7qbuluC/rCbjqfeWv1oUsuT1ZyL2oLqJIVFvMyiayNsfPQCJr1wUW",
-		"todo": [
-			{
-				"id": "773c7043-599a-41b9-b25d-58c2be29602d",
-				"todoItem": "complete all work"
-			},
-			{ "id": "6933bb88-06c4-413f-b1c8-b044e9be9db0", "todoItem": "fun task" },
-			{ "id": "f4e979ba-e4ff-45f3-ba76-b39971fe89d8", "todoItem": "join zoom" }
-		]
-	},
-	{
-		"firstName": "satvik",
-		"email": "satvik@gmail.com",
-		"password": "$2b$12$e5pzdD6v7uDRqeoAdtBsM.mQj8Mipe/74HY8Q7zYwYPeNHt8xGPwm",
-		"todo": [
-			{
-				"id": "7d33978b-8603-4813-be5a-3718cc1316ea",
-				"todoItem": "be an evil genius"
-			},
-			{
-				"id": "3de3dfe7-94e9-4735-94dc-a543adeb4472",
-				"todoItem": "create fun project"
-			}
-		]
-	}
+    {
+        "firstName": "harsh",
+        "email": "harsh@gmail.com",
+        "password": "$2b$12$8zsanV1sSzxi4O/ect0AfOW1kwSjR3X3aEwtardSEsmc2nl7oxuoK",
+        "todo": [
+            {
+                "id": "a3c53fde-a2e5-485a-9631-415b1d759e5e",
+                "todoItem": "task 1"
+            },
+            {
+                "id": "f3ec9241-ad16-4661-8ac0-62abe62a05ed",
+                "todoItem": "work to do"
+            },
+            {
+                "id": "ae6962cf-1908-4062-a451-87ed39929ace",
+                "todoItem": "break time"
+            }
+        ]
+    },
+    {
+        "firstName": "ansh",
+        "email": "ansh@gmail.com",
+        "password": "$2b$12$d7GDcezy/9C5l2aY30x0Y.6ZF/OJ15BVZWy1RxFhGupn1kA8ldFj.",
+        "todo": [
+            {
+                "id": "2fdd8779-6e16-4204-82c9-eb202ef9f592",
+                "todoItem": "new task"
+            },
+            {
+                "id": "395b7c62-6b0c-4dae-8f17-c2c2bce7af95",
+                "todoItem": "take over the world"
+            }
+        ]
+    },
+    {
+        "firstName": "prash",
+        "email": "prash@gmail.com",
+        "password": "$2b$12$7qbuluC/rCbjqfeWv1oUsuT1ZyL2oLqJIVFvMyiayNsfPQCJr1wUW",
+        "todo": [
+            {
+                "id": "773c7043-599a-41b9-b25d-58c2be29602d",
+                "todoItem": "complete all work"
+            },
+            {
+                "id": "6933bb88-06c4-413f-b1c8-b044e9be9db0",
+                "todoItem": "fun task"
+            },
+            {
+                "id": "f4e979ba-e4ff-45f3-ba76-b39971fe89d8",
+                "todoItem": "join zoom"
+            }
+        ]
+    },
+    {
+        "firstName": "satvik",
+        "email": "satvik@gmail.com",
+        "password": "$2b$12$e5pzdD6v7uDRqeoAdtBsM.mQj8Mipe/74HY8Q7zYwYPeNHt8xGPwm",
+        "todo": [
+            {
+                "id": "7d33978b-8603-4813-be5a-3718cc1316ea",
+                "todoItem": "be an evil genius"
+            },
+            {
+                "id": "3de3dfe7-94e9-4735-94dc-a543adeb4472",
+                "todoItem": "create fun project"
+            }
+        ]
+    }
 ]
