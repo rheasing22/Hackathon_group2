@@ -13,7 +13,7 @@ async function getToDo() {
 		let users = await readFile(path.resolve("data/users.json"));
 		users = JSON.parse(users);
 		const userIndex = users.findIndex((user) => user.email === userEmail);
-		if (!users[userIndex].todo) {
+		if (!users[userIndex].todo.length) {
 			console.log("No items to display");
 			return;
 		}
@@ -22,8 +22,8 @@ async function getToDo() {
 			`You have a total of ${todos.length} todo items, \nPlease enter the id of the ToDo you want to view : `
 		);
 		try {
-			 let todoFound = todos.find((ele) => id === ele.id).todoItem;
-			 console.log(todoFound);
+			let todoFound = todos.find((ele) => id === ele.id).todoItem;
+			console.log('The todo item is:', todoFound);
 		} catch {
 			console.log("Wrong ID entered");
 		}

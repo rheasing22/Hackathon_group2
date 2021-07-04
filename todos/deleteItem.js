@@ -1,9 +1,6 @@
 const readlineSync = require('readline-sync');
 const verifyToken = require('../helpers/verifyToken');
 const { writeFile, readFile } = require('fs/promises');
-const { v4: uuidv4 } = require('uuid');
-
-
 const path = require('path');
 const { read } = require('fs');
 
