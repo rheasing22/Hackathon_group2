@@ -40,6 +40,7 @@ async function main() {
                 break;
             case 4:
                 console.log("Getting a ToDo item");
+                await todos.getToDo();
                 break;
             case 5:
                 console.log("Updating a ToDo item");
@@ -49,6 +50,7 @@ async function main() {
                 break;
             case 7:
                 console.log("Getting all ToDo items");
+                await todos.getAllToDos();
                 break;
             case 8:
                 console.log("Deleting a user Account");
