@@ -1,5 +1,24 @@
 [
     {
+        "firstName": "rhea",
+        "email": "rhea@gmail.com",
+        "password": "$2b$12$zEmhOCFD6jg..Eib8GD29OVPN7NbWGl4G6Dy4YIRzEHeOANDpyuMu",
+        "todo": [
+            {
+                "id": "a4dfd557-4c2d-4e83-981d-83f1009f429d",
+                "todoItem": "task 1"
+            },
+            {
+                "id": "d1bd4d16-c0a0-4a82-8148-8d6dfc8ae69e",
+                "todoItem": "finish hw"
+            },
+            {
+                "id": "e2e72ef3-1b80-4dfb-a04b-d92066c257df",
+                "todoItem": "watch class"
+            }
+        ]
+    },
+    {
         "firstName": "harsh",
         "email": "harsh@gmail.com",
         "password": "$2b$12$8zsanV1sSzxi4O/ect0AfOW1kwSjR3X3aEwtardSEsmc2nl7oxuoK",
