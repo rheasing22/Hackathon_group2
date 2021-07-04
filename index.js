@@ -45,6 +45,7 @@ async function main() {
                 break;
             case 5:
                 console.log("Updating a ToDo item");
+                await todos.updateToDo()
                 break;
             case 6:
                 console.log("Deleting a ToDo item");

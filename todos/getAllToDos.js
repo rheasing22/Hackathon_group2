@@ -13,8 +13,11 @@ async function getAllToDos() {
 		let users = await readFile(path.resolve('data/users.json'));
 		users = JSON.parse(users);
 		const userIndex = users.findIndex((user) => user.email === userEmail);
-		if (!users[userIndex].todo) {
+
+
+		if (!users[userIndex].todo.length) {
 			console.log('No items to display');
+			return;
 		}
 
 		const todos = users[userIndex].todo;

@@ -1,14 +1,11 @@
 const readlineSync = require('readline-sync');
 const verifyToken = require('../helpers/verifyToken');
 const { writeFile, readFile } = require('fs/promises');
-const { v4: uuidv4 } = require('uuid');
-
-
 const path = require('path');
 const { read } = require('fs');
 
 
-async function deleteItem() {
+async function updateToDo() {
     try {
         // we first check if the token is valid
         const userEmail = verifyToken();
@@ -18,9 +15,7 @@ async function deleteItem() {
         }
         console.log("Token Verified Successfully ", userEmail);
 
-        //enter the id and read the file
-
-
+        //read the file
         let users = await readFile(path.resolve('data/users.json'));
         users = JSON.parse(users);
 
@@ -29,32 +24,31 @@ async function deleteItem() {
         let todos = users[userIndex].todo
 
         //check if todo list is empty
-
         if (!todos.length) {
-            console.log("Todo list empty, Nothing To Delete");
+            console.log("Todo list empty, Nothing To Update");
             return;
         }
 
-        const id = readlineSync.question("Enter Id of Todo List Item To Delete: ");
+        const id = readlineSync.question("Enter Id of Todo List Item To Update: ");
         // if not found it will return undefined -> wrong id 
-        let todoFound = todos.find((ele) => id === ele.id);
-        if (!todoFound) {
+        let todoIndex = todos.findIndex((ele) => id === ele.id);
+        if (todoIndex < 0) {
             console.log('Wrong Id Entered');
             return;
         }
 
-        //deleting todo list item 
-        let itemDeleted = todoFound.todoItem;
-        todos = todos.filter(ele => id != ele.id);
-        users[userIndex].todo = todos;
+        //updating todo list item 
+        let updatedItem = readlineSync.question("Enter ToDo: ");
+        users[userIndex].todo[todoIndex].todoItem = updatedItem;
 
         //write new todo list to the file
         await writeFile(path.resolve('data/users.json'), JSON.stringify(users));
-        console.log('We have deleted :', itemDeleted);
+        console.log('We have updated :', updatedItem);
 
     } catch (err) {
         throw (err);
     }
-}
-module.exports = deleteItem;
 
+
+}
+module.exports = updateToDo;
