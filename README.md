@@ -1,4 +1,4 @@
-# THSCohortE_2021-Rhea
+# THSCohortE_2021
 
 ## General info
 
