@@ -33,7 +33,6 @@ async function addItem() {
 
         await writeFile(path.resolve('data/users.json'), JSON.stringify(users));
         console.log("Added ToDo Item");
-        console.log('the todo id is:', id);
     } catch (err) {
         console.log(err);
     }

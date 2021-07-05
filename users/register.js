@@ -7,9 +7,9 @@ const loadingSpinner = require('../helpers/loadingAnimation');
 
 async function userRegister() {
     try {
-        let firstName = readlineSync.question("Enter your name : ");
-        let email = readlineSync.questionEMail("Enter your email : ");
-        let password = readlineSync.question("Enter Password : ", {
+        let firstName = readlineSync.question("Name : ");
+        let email = readlineSync.questionEMail("Email : ");
+        let password = readlineSync.question("Password : ", {
             hideEchoBack: true
         });
         let confirmPasswd = readlineSync.question("Confirm Password : ", {
