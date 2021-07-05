@@ -1,3 +1,10 @@
+/*
+Author : Prashanth
+Functionality: To add the todo item
+Description: We are adding a todo item. If the token is valid we can add the todo item to the file , otherwise we can't. 
+*/
+
+
 const readlineSync = require('readline-sync');
 const verifyToken = require('../helpers/verifyToken');
 const { writeFile, readFile } = require('fs/promises');

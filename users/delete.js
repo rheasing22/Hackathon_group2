@@ -1,3 +1,10 @@
+/*
+Author : Rhea 
+Functionality: To delete the user
+Description:We are deleting the user based on the email. If the email and the password are correct we are able to 
+delete the user , otherwise the authentication fails.
+*/
+
 const readlineSync = require('readline-sync');
 const bcrypt = require("bcrypt");
 const { writeFile, readFile } = require('fs/promises');

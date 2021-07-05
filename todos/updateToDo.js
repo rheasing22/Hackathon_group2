@@ -1,3 +1,9 @@
+/*
+Author : Harsh 
+Functionality: Update the todo item given the id
+Description: We are updating a todo list item. If the token is valid and the id of the item is valid we can update the todo item 
+otherwise we can't. 
+*/
 
 const readlineSync = require('readline-sync');
 const verifyToken = require('../helpers/verifyToken');
