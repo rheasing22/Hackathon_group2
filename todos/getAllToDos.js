@@ -1,3 +1,9 @@
+/*
+Author : Ansh
+Functionality: To get all todo items
+Description: We are getting all the todo items. If the token is valid we can get all the todo items, otherwise we can't.  
+*/
+
 const readlineSync = require('readline-sync');
 const verifyToken = require('../helpers/verifyToken');
 const { writeFile, readFile } = require('fs/promises');

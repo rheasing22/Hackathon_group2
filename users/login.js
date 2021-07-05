@@ -1,3 +1,11 @@
+/*
+Author: Prashanth
+Functionality: We are looging the user in based on the email and the password
+Description: Performing user login by entering the username and password. If either the username or the password is incorrect then display error message 
+otherwise, create a the access token.
+
+*/
+
 const readlineSync = require('readline-sync');
 const bcrypt = require("bcrypt");
 const { readFile } = require('fs/promises');
@@ -10,8 +18,8 @@ const SECRET_KEY = 'thehackingschoolprash';
 
 async function userLogin() {
     try {
-        let email = readlineSync.questionEMail("Enter your email : ");
-        let password = readlineSync.question("Enter Password : ", {
+        let email = readlineSync.questionEMail("Email : ");
+        let password = readlineSync.question("Password : ", {
             hideEchoBack: true
         });
         loadingSpinner.startLoading();

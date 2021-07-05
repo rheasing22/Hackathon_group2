@@ -1,3 +1,9 @@
+/*
+Author : Rhea Singh 
+Functionality: To delete the todo item
+Description: We are deleting a todo list item. If the token is valid and the id of the item is valid we can delete the todo item , otherwise we can't. 
+*/
+
 const readlineSync = require('readline-sync');
 const verifyToken = require('../helpers/verifyToken');
 const { writeFile, readFile } = require('fs/promises');

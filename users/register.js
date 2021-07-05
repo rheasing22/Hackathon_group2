@@ -1,3 +1,9 @@
+/*
+Author: Prashanth
+Functionality: We are registering the user 
+Description: Reistering a new user .If the email is present in the data it is not added to the file otherwise email is added. 
+*/
+
 const readlineSync = require('readline-sync');
 const bcrypt = require("bcrypt");
 const { writeFile, readFile } = require('fs/promises');
