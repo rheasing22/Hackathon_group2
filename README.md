@@ -117,13 +117,13 @@ The todo item is: task 1
 Sample Input 2:
 Enter your access token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoicmhlYUBnbWFpbC5jb20iLCJpYXQiOjE2MjU0Njc4MDcsImV4cCI6MTYyNTQ3MTQwN30.De5eDcZcCraKxWt0nB5WujvRPTWcz-KR4kOIOQ1hmQE
 Please enter the id of the ToDo you want to view : 1234
-Wrong ID entered
 Sample Output :
 You have a total of 3 todo items, 
 Wrong ID entered
 
 Sample Input 3:
 Enter your access token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoicmhlYUBnbWFpbC5jb20iLCJpYXQiOjE2MjU0Njc4MDcsImV4cCI6MTYyNTQ3MTQwN30.De5eDcZcCraKxWt0nB5WujvRPTWcz-KR4kOIOQ1hmQE
+Explanation: The todo list for user rhea@gmail.com was empty 
 Sample Output : No items to display
 
 ```
@@ -190,7 +190,7 @@ These are all the ToDo items:
 
 Sample Input 2: 
 Enter your access token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoicmhlYUBnbWFpbC5jb20iLCJpYXQiOjE2MjU0Njc4MDcsImV4cCI6MTYyNTQ3MTQwN30.De5eDcZcCraKxWt0nB5WujvRPTWcz-KR4kOIOQ1hmQE
-Explanation: if there are no items to display we can't get any todo item
+Explanation: Since there are no items to display we can't get any todo item
 Sample Output: No items to display
 
 ```
