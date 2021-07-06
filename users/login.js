@@ -3,7 +3,6 @@ Author: Prashanth
 Functionality: We are looging the user in based on the email and the password
 Description: Performing user login by entering the username and password. If either the username or the password is incorrect then display error message 
 otherwise, create a the access token.
-
 */
 
 const readlineSync = require('readline-sync');

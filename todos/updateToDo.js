@@ -9,7 +9,7 @@ const readlineSync = require('readline-sync');
 const verifyToken = require('../helpers/verifyToken');
 const { writeFile, readFile } = require('fs/promises');
 const path = require('path');
-const { read } = require('fs');
+
 
 
 async function updateToDo() {
@@ -39,6 +39,7 @@ async function updateToDo() {
         const id = readlineSync.question("Enter Id of Todo List Item To Update: ");
         // if not found it will return undefined -> wrong id 
         let todoIndex = todos.findIndex((ele) => id === ele.id);
+        console.log(todoIndex);
         if (todoIndex < 0) {
             console.log('Wrong Id Entered');
             return;
