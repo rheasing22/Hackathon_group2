@@ -4,7 +4,6 @@ Functionality: To add the todo item
 Description: We are adding a todo item. If the token is valid we can add the todo item to the file , otherwise we can't. 
 */
 
-
 const readlineSync = require('readline-sync');
 const verifyToken = require('../helpers/verifyToken');
 const { writeFile, readFile } = require('fs/promises');
@@ -27,7 +26,7 @@ async function addItem() {
         // create the unique id
         let id = uuidv4();
         const todoObj = { id, todoItem };
-        let users = await readFile(path.resolve('data/users.json'));
+        let users = await readFile(path.resolve('data/todo.json'));
         users = JSON.parse(users);
 
         const userIndex = users.findIndex(user => user.email === userEmail);
@@ -38,7 +37,7 @@ async function addItem() {
 
         users[userIndex].todo.push(todoObj);
 
-        await writeFile(path.resolve('data/users.json'), JSON.stringify(users));
+        await writeFile(path.resolve('data/todo.json'), JSON.stringify(users));
         console.log("Added ToDo Item");
         console.log('The id of to do is:', id);
     } catch (err) {

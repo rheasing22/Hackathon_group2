@@ -16,7 +16,7 @@ async function getToDo() {
 			console.log("Invalid Token / Token expired");
 			return;
 		}
-		let users = await readFile(path.resolve("data/users.json"));
+		let users = await readFile(path.resolve("data/todo.json"));
 		users = JSON.parse(users);
 		const userIndex = users.findIndex((user) => user.email === userEmail);
 		if (!users[userIndex].todo.length) {

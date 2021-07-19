@@ -23,7 +23,7 @@ async function updateToDo() {
         console.log("Token Verified Successfully ", userEmail);
 
         //read the file
-        let users = await readFile(path.resolve('data/users.json'));
+        let users = await readFile(path.resolve('data/todo.json'));
         users = JSON.parse(users);
 
         //find the user and then the array of todos
@@ -50,7 +50,7 @@ async function updateToDo() {
         users[userIndex].todo[todoIndex].todoItem = updatedItem;
 
         //write new todo list to the file
-        await writeFile(path.resolve('data/users.json'), JSON.stringify(users));
+        await writeFile(path.resolve('data/todo.json'), JSON.stringify(users));
         console.log('We have updated :', updatedItem);
 
     } catch (err) {
