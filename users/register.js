@@ -29,9 +29,15 @@ async function userRegister() {
         const saltRounds = 12;
         const salt = await bcrypt.genSalt(saltRounds);
         password = await bcrypt.hash(password, salt);
+        // Data for users.json
         const userData = { firstName, email, password };
         let users = await readFile(path.resolve('data/users.json'));
         users = JSON.parse(users);
+        // Data for todo.json
+        const onlyEmail = {email};
+        let dataFile  = await readFile(path.resolve('data/todo.json'));
+        dataFile = JSON.parse(dataFile);
+
         const userFound = users.find(user => user.email === userData.email);
         if (userFound) {
             loadingSpinner.stopLoading();
@@ -40,6 +46,9 @@ async function userRegister() {
         }
         users.push(userData);
         await writeFile(path.resolve('data/users.json'), JSON.stringify(users));
+        dataFile.push(onlyEmail);
+        await writeFile(path.resolve('data/todo.json'), JSON.stringify(dataFile));
+        
         loadingSpinner.stopLoading();
         console.log("User is Registered Successfully");
     } catch (err) {
